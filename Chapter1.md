@@ -2,7 +2,7 @@
 ***
 ### Concept 
 기본적인 객체 연산을 수행하는 메서드로 파이썬 인터프리터가 호출한다   
--언제나 앞뒤로 __len__()과 같이 이중 언더바를 갖고 있다  
+-언제나 앞뒤로\_\_len\_\_()과 같이 이중 언더바를 갖고 있다  
 ***
 
 ### Usage  
@@ -11,9 +11,9 @@
 -C++에 비유하자면 연산자 오버로딩과 비슷한 느낌이다
 ***
 ### How it works internally   
-* len(x)와 for in i t에서 호출되는  iter(y)를 예시로 설명하면 각각 x.__len__()와 y.__iter__()를 호출한다
+* len(x)와 for in i t에서 호출되는  iter(y)를 예시로 설명하면 각각 x.\_\_len\_\_()와 y.\_\_iter\_\_()를 호출한다
 * list, str, bytearray와 같은 내장 자료형이라면 PyVarObject C 구조체의 ob_size 필드의 값을 반환한다  
-(이 경우에는 __len__() 메서드 호출보다 ob_size의 리턴이 빠르기 때문) 
+(이 경우에는 \_\_len\_\_() 메서드 호출보다 ob_size의 리턴이 빠르기 때문) 
 
 
 
@@ -40,7 +40,7 @@ deck = FrenchDeck()
 ```
 
 ***
-**2) __len__()과 __getitem__() 사용해보기**
+**2) \_\_len\_\_()과 \_\_getitem\_\_() 사용해보기**
 
 
 ```python
@@ -51,11 +51,11 @@ print(len(deck), deck[1], sep = '\n')
     Card(rank='3', suit='spades')
     
 
-여기서 len(deck)은 __len__(deck)을 호출하고 
-deck[1]은 deck.__getitem__(1)을 호출해 다음과 같은 결과가 출력된다
+여기서 len(deck)은 \_\_len\_\_(deck)을 호출하고 
+deck[1]은 deck.\_\_getitem\_\_(1)을 호출해 다음과 같은 결과가 출력된다
 ***
 
-**3) __getitem__()을 사용한 random.choice와 슬라이싱**
+**3) \_\_getitem\_\_()을 사용한 random.choice와 슬라이싱**
 
 
 ```python
