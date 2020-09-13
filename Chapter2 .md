@@ -198,7 +198,7 @@ if __name__ == "__main__":
     
 
 ---
-**Memory View**
+**Memory View**  
 array 비슷한 표기법을 사용하는 memoryview.cast() 메서드는 바이트를 이동시키지  
 않고 C언어의 형변환 연산자처럼 여러 바이트로 된 데이터를 읽거나 쓰는 방식을 
 바꿀 수 있개 해준다
