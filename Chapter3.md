@@ -19,13 +19,15 @@
 
     - 존재하지 않는 키를 setfault()로 처리하기
     - defaultdict : 존재하지 않는 키에 대한 또 다른 처리
-    - \_\_missing\_\_() 메서드  
+    - __missing__() 메서드  
       
       
-**3. 표준 라이브러리에서 제공하는 다양한 딕셔너리 클래스**     
-    - collections.OrderedDict
-    - collections.ChainMap
-    - collections.Counter
+**3. 표준 라이브러리에서 제공하는 다양한 딕셔너리 클래스**    
+
+    collections.OrderedDict
+    collections.ChainMap
+    collections.Counter
+    
 ---
 
 ### Usage    
