@@ -213,10 +213,7 @@ for city in sorted(metro_data, key = itemgetter(1)):
     ('Tokyo', 'JP', 36.933)
     ('Mexico', 'MX', 20, 142)
     ('New York-Newark', 'US', 20, 104)
-    
 
-    ERROR: Could not find a version that satisfies the requirement operator (from versions: none)
-    ERROR: No matching distribution found for operator
     
 
 **functools.partial()로 인수 고정하기**
